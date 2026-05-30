@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Soumen Karmakar</title>
+<meta name="description" content="Portfolio of Soumen Karmakar – Proactive, self-taught Frontend Developer from Bardhaman | HTML5, CSS3, JavaScript (ES6) & Tailwind CSS"/>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div id="tsparticles"></div>
+
+<header class="site-header" id="site-header">
+  <a href="#home" class="logo">
+    <span class="mono g">WElCOME BACK</span>
+  </a>
+  <div class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn-hire">Hire me</a>
+  </div>
+  <div class="ham" id="ham" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<div class="mob-overlay" id="mobOverlay">
+  <a href="#home"         onclick="closeMenu()">Home</a>
+  <a href="#about"        onclick="closeMenu()">About</a>
+  <a href="#skills"       onclick="closeMenu()">Skills</a>
+  <a href="#project"      onclick="closeMenu()">Projects</a>
+  <a href="#achievements" onclick="closeMenu()">Achievements</a>
+  <a href="#experience"   onclick="closeMenu()">Experience</a>
+  <a href="#contact"      onclick="closeMenu()">Contact</a>
+</div>
+
+<main>
+
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-greeting aos aos-up" data-delay="0">
+        Hello <span class="wave">👋</span>, I'm
+      </div>
+      <h1 class="hero-name aos aos-up" data-delay="120">
+        <span class="first">Soumen<br></span>
+        <span class="last">Karmakar</span>
+      </h1>
+      <div class="hero-role aos aos-up" data-delay="240">
+        &gt;&nbsp;<span id="typed-text">Frontend Developer </span><span class="cursor-blink"></span>
+      </div>
+      <p class="hero-tagline aos aos-up" data-delay="360">
+        <strong>Proactive, self-taught Frontend Developer</strong> from Bardhaman, West Bengal. Specializing in <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript (ES6)</strong> & <strong>Tailwind CSS</strong> to build responsive, pixel-perfect interfaces.
+      </p>
+      <div class="hero-btns aos aos-up" data-delay="480">
+        <a href="#project" class="btn btn-green">View Projects</a>
+        <a href="#contact" class="btn btn-pink">Hire Me</a>
+        <a href="#" target="_blank" class="btn btn-outline">Resume ↓</a>
+      </div>
+      <div class="hero-socials aos aos-up" data-delay="600">
+        <a href="karmakarsoumen07@gmail.com" target="_blank" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E31F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://github.com/WithSoumen" target="_blank" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="#24292f"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/soumen-karmakar-b65b77411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://youtube.com/@heyyminee" target="_blank" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/heyy_sizziiii?igsh=MWgwc3RjZmsxYWo3Yw==" target="_blank" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="ig1" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs>
+            <path fill="url(#ig1)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right aos aos-right" data-delay="200">
+      <div class="hero-card">
+        <div class="hc-top">
+          <div class="avatar-wrapper">
+    <div class="hc-avatar">
+        <img src="https://ik.imagekit.io/6fvadvnaz/IMG_20260429_082943.png" alt="Profile">
+    </div>
+</div>
+
+          <div class="hc-info">
+            <h3>Soumen Karmakar</h3>
+            <p>Frontend Developer</p>
+            <div class="loc">Bardhaman, West Bengal</div>
+          </div>
+        </div>
+        <div class="hc-stats">
+          <div class="hc-stat"><div class="hc-stat-num">81.2%</div><div class="hc-stat-lbl">XII Score</div></div>
+          <div class="hc-stat"><div class="hc-stat-num">5+</div><div class="hc-stat-lbl">Projects Built</div></div>
+          <div class="hc-stat"><div class="hc-stat-num">8+</div><div class="hc-stat-lbl">Technologies</div></div>
+        </div>
+        <div class="hc-pills">
+          <div class="hc-pill">🟨 JavaScript</div>
+          <div class="hc-pill">🌐 HTML5</div>
+          <div class="hc-pill">🎨 CSS3</div>
+          <div class="hc-pill">🌊 Tailwind</div>
+          <div class="hc-pill">🤖 GenAI</div>
+          <div class="hc-pill">🐍 Python</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="wrap section-pad">
+    <div class="about-grid">
+      <div class="about-copy">
+        <div class="sec-eyebrow aos aos-left">About Me</div>
+        <h2 class="sec-title aos aos-left" data-delay="80">Who I Am &amp; <span>What I Do</span></h2>
+        <p class="aos aos-left" data-delay="120">
+          Hi! I'm <strong>Soumen Karmakar</strong>, a proactive and self-taught
+          <span class="hl">Frontend Developer from Bardhaman, West Bengal.</span>
+        </p>
+        <p class="aos aos-left" data-delay="160">
+          I recently completed my <strong>Higher Secondary (Class 12th) in the Science stream from Ramlal Adarsha Vidyalaya in 2026</strong>, achieving a strong academic score of <strong>81.2%</strong> that reflects my sharp analytical and logical capabilities.
+        </p>
+        <p class="aos aos-left" data-delay="200">
+          Driven by a passion for web development, I have independently mastered core technologies including semantic <span class="hl">HTML5, CSS3, and JavaScript (ES6)</span>, along with modern styling workflows like Tailwind CSS. Professionally fluent in Bengali, Hindi, and English, I stand out as a dedicated learner poised to deliver efficient, user-centric web solutions.
+        </p>
+        <div class="info-grid">
+          <div class="info-chip aos aos-up" data-delay="0">
+            <div class="info-chip-icon">🎓</div>
+            <div>
+              <div class="info-chip-lbl">Education</div>
+              <div class="info-chip-val">Higher Secondary (Class 12th) — Science</div>
+            </div>
+          </div>
+          <div class="info-chip aos aos-up" data-delay="60">
+            <div class="info-chip-icon">🏛️</div>
+            <div>
+              <div class="info-chip-lbl">School</div>
+              <div class="info-chip-val">Ramlal Adarsha Vidyalaya</div>
+            </div>
+          </div>
+          <div class="info-chip aos aos-up" data-delay="120"><div class="info-chip-icon">⭐</div><div><div class="info-chip-lbl">Score</div><div class="info-chip-val">81.2%</div></div></div>
+          <div class="info-chip aos aos-up" data-delay="180"><div class="info-chip-icon">📍</div><div><div class="info-chip-lbl">Location</div><div class="info-chip-val">Bardhaman, West Bengal</div></div></div>
+          <div class="info-chip aos aos-up" data-delay="240"><div class="info-chip-icon">🗣️</div><div><div class="info-chip-lbl">Languages</div><div class="info-chip-val">Bengali, Hindi, English</div></div></div>
+          <div class="info-chip aos aos-up" data-delay="300"><div class="info-chip-icon">✉️</div><div><div class="info-chip-lbl">Email</div><div class="info-chip-val">karmakarsoumen07@gmail.com</div></div></div>
+        </div>
+        <div class="tag-row aos aos-up" data-delay="350">
+          <div class="tag">🌐 Web Development</div>
+          <div class="tag">🎨 UI/UX Design</div>
+          <div class="tag">💻 JavaScript (ES6)</div>
+          <div class="tag">🌊 Tailwind CSS</div>
+          <div class="tag">🧠 GenAI Integration</div>
+          <div class="tag">🤖 Machine Learning</div>
+        </div>
+        
+        <h3 style="margin-top:3rem;font-size:2rem;color:var(--green)" class="aos aos-left" data-delay="400">My Main Skills:</h3>
+        <div class="hard-skills aos aos-up" data-delay="450" style="display:flex;flex-wrap:wrap;gap:1.8rem;margin-top:1.4rem;align-items:center">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">Python</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">HTML5</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="ML/AI" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">ML / AI</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">CSS3</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">JavaScript</span></div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:.4rem"><img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="GenAI" style="width:3.4rem;transition:transform .2s" onmouseover="this.style.transform='scale(1.25)'" onmouseout="this.style.transform=''"/><span style="font-size:1.1rem;color:var(--text3)">GenAI</span></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="sec-eyebrow aos aos-right">My Journey</div>
+        <h2 class="sec-title aos aos-right" data-delay="80" style="font-size:2.8rem">Education &amp; <span>Experience</span></h2>
+        <div class="timeline">
+          <div class="tl-item aos aos-right" data-delay="0">
+            <div class="tl-dot">🎓</div>
+            <div class="tl-box">
+              <div class="tl-kind">Education</div>
+              <div class="tl-ttl">Higher Secondary (Class 12th) — Science</div>
+              <div class="tl-org">Ramlal Adarsha Vidyalaya</div>
+              <div class="tl-date">May'24 – May'26 &nbsp;|&nbsp; Score: 81.2%</div>
+              <div class="tl-body">Successfully completed higher secondary education, demonstrating strong analytical and logical capabilities through the Science stream.</div>
+              <ul class="tl-bullets">
+                <li>Major subjects: Physics, Chemistry, Mathematics</li>
+                <li>Consistent academic performer (81.2% overall)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tl-item aos aos-right" data-delay="80">
+            <div class="tl-dot">🏛️</div>
+            <div class="tl-box">
+              <div class="tl-kind">Education</div>
+              <div class="tl-ttl">Secondary (Class 10th)</div>
+              <div class="tl-org">Sukur H.P. Institution</div>
+              <div class="tl-date">2018 – April'24</div>
+              <div class="tl-body">Built a strong foundational knowledge and academic discipline. Discovered a deep interest in programming and logic building.</div>
+            </div>
+          </div>
+          <div class="tl-item aos aos-right" data-delay="160">
+            <div class="tl-dot">💻</div>
+            <div class="tl-box">
+              <div class="tl-kind">Self-Taught Journey</div>
+              <div class="tl-ttl">Independent Frontend Developer</div>
+              <div class="tl-org">Self-Directed Learning</div>
+              <div class="tl-date">Oct'22 – Present</div>
+              <div class="tl-body">Independently mastered web technologies to build responsive, library-free web utilities and pixel-perfect interfaces.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills">
+  <div class="wrap section-pad">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="sec-eyebrow aos" style="justify-content:center">Expertise</div>
+      <h2 class="sec-title aos aos-up" style="text-align:center">Technical <span>Skills</span></h2>
+      <p class="sec-sub aos aos-up" data-delay="80" style="margin:0 auto;text-align:center">A full view of my stack — focusing heavily on frontend performance and logic.</p>
+    </div>
+    <div class="skills-outer">
+      <div class="skill-block aos aos-left">
+        <div class="skill-block-head"><div class="skill-block-icon">🎨</div><div class="skill-block-title">Frontend Development</div></div>
+        <div class="skill-rows">
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""/>HTML5</span><span class="skill-pct">95%</span></div><div class="skill-track"><div class="skill-fill" data-w="95"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""/>CSS3</span><span class="skill-pct">82%</span></div><div class="skill-track"><div class="skill-fill" data-w="82"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""/>JavaScript (ES6+)</span><span class="skill-pct">52%</span></div><div class="skill-track"><div class="skill-fill" data-w="52"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt=""/>Tailwind CSS</span><span class="skill-pct">48%</span></div><div class="skill-track"><div class="skill-fill" data-w="48"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-block aos aos-right">
+        <div class="skill-block-head"><div class="skill-block-icon">🤖</div><div class="skill-block-title">AI &amp; Programming</div></div>
+        <div class="skill-rows">
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt=""/>Python</span><span class="skill-pct">37%</span></div><div class="skill-track"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name" style="gap:.6rem">🧠 ML / AI Concepts</span><span class="skill-pct">15%</span></div><div class="skill-track"><div class="skill-fill" data-w="15"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name" style="gap:.6rem">⚡ GenAI</span><span class="skill-pct">10%</span></div><div class="skill-track"><div class="skill-fill" data-w="10"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><span class="skill-name"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt=""/>Git &amp; Version Control</span><span class="skill-pct">50%</span></div><div class="skill-track"><div class="skill-fill" data-w="50"></div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="prof-wrap aos aos-up" data-delay="200" style="max-width:700px;margin:4rem auto 0">
+      <h3>Overall Proficiency</h3>
+      <div class="prof-item"><div class="prof-top"><span>Frontend Layout & Styling</span><span class="prof-pct">74%</span></div><div class="prof-track"><div class="prof-fill" data-w="74" style="background:linear-gradient(90deg,var(--green),var(--blue))"></div></div></div>
+      <div class="prof-item"><div class="prof-top"><span>JavaScript Logic & DOM</span><span class="prof-pct">38%</span></div><div class="prof-track"><div class="prof-fill" data-w="38" style="background:linear-gradient(90deg,#7c3aed,var(--pink))"></div></div></div>
+      <div class="prof-item"><div class="prof-top"><span>Python & AI Concepts</span><span class="prof-pct">27%</span></div><div class="prof-track"><div class="prof-fill" data-w="27" style="background:linear-gradient(90deg,var(--blue),var(--green))"></div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="project">
+  <div class="wrap section-pad">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="sec-eyebrow aos" style="justify-content:center">Portfolio</div>
+      <h2 class="sec-title aos aos-up" style="text-align:center">My <span>Projects</span></h2>
+      <p class="sec-sub aos aos-up" data-delay="80" style="margin:0 auto;text-align:center">Showcasing my front-end builds, logic-driven applications, and UI clones.</p>
+    </div>
+    <div class="proj-filter aos aos-up" data-delay="160">
+      <button class="pf-btn active" data-f="all">All</button>
+      <button class="pf-btn" data-f="web">Web Dev</button>
+      <button class="pf-btn" data-f="js">JavaScript</button>
+      <button class="pf-btn" data-f="ml">ML / AI</button>
+    </div>
+
+    <div class="projects" id="projGrid">
+
+      <div class="project aos aos-flip" data-delay="0" data-cat="web">
+        <div class="proj-head">
+          <div class="proj-folder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="proj-links-row">
+            <a href="https://github.com/WithSoumen/Amazon.in" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="var(--black)" class="proj-link-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="proj-title">Amazon.in — Clone</h3>
+         <span class="proj-badge">Featured</span>
+        <p class="proj-desc">A highly responsive, library-free web utility and pixel-perfect interface modeled after the Amazon India homepage.</p>
+        <ul class="proj-highlights">
+          <li>Performance optimized without heavy frameworks</li>
+          <li>Cross-device responsiveness implemented natively</li>
+          <li>Deployed live on GitHub Pages</li>
+        </ul>
+        <div class="tech-pills">
+          <span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span><span class="tech-pill">JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project aos aos-flip" data-delay="60" data-cat="web js">
+        <div class="proj-head">
+          <div class="proj-folder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="proj-links-row">
+            <a href="https://github.com/WithSoumen/Calculas-Core" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="var(--black)" class="proj-link-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+        
+        <h3 class="proj-title">Calculas Core</h3>
+         <span class="proj-badge">Featured</span>
+        <p class="proj-desc">A complete logic-driven calculator application demonstrating clean code principles, edge-case handling, and advanced DOM manipulation.</p>
+        <ul class="proj-highlights">
+          <li>Extensive mathematical logic in Vanilla JS</li>
+          <li>Focus on cross-device responsiveness</li>
+        </ul>
+        <div class="tech-pills">
+          <span class="tech-pill">JavaScript (ES6)</span><span class="tech-pill">HTML5</span><span class="tech-pill">CSS3</span>
+        </div>
+      </div>
+
+            <div class="project aos aos-flip" data-delay="60" data-cat="web js ar">
+        <div class="proj-head">
+          <div class="proj-folder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="proj-links-row">
+            <a href="https://github.com/WithSoumen/AirDraw" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="var(--black)" class="proj-link-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="proj-title">Air Draw</h3>
+               <span class="proj-badge">Featured</span>
+        <p class="proj-desc">An immersive, futuristic, in-browser Augmented Reality drawing application that turns your hand into a digital paintbrush using cutting-edge computer vision.</p>
+        <ul class="proj-highlights">
+          <li>Real-time hand tracking with Google MediaPipe Hands</li>
+          <li>Dynamic particle engine with glowing sparks and neon inks</li>
+          <li>Fully app-state aware with intuitive gesture control mechanics</li>
+        </ul>
+        <div class="tech-pills">
+          <span class="tech-pill">MediaPipe</span><span class="tech-pill">HTML5 Canvas</span><span class="tech-pill">Web AR</span><span class="tech-pill">CSS3</span>
+        </div>
+      </div>
+
+      <div class="project aos aos-flip" data-delay="120" data-cat="ml">
+        <div class="proj-head">
+          <div class="proj-folder"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="proj-links-row">
+            <a href="https://withsoumen.github.io/GenAI-Chatbot-Exploration/" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="var(--black)" class="proj-link-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+        <h3 class="proj-title">GenAI Chatbot Exploration</h3>
+         <span class="proj-badge">Featured</span>
+        <p class="proj-desc">An interactive GenAI chatbot utilizing Python to bridge the gap between frontend interfaces and backend machine learning APIs.</p>
+        <ul class="proj-highlights">
+          <li>Demonstrates interest in GenAI concepts</li>
+          <li>Integrated with standard AI APIs</li>
+        </ul>
+        <div class="tech-pills">
+          <span class="tech-pill">Python</span><span class="tech-pill">GenAI</span><span class="tech-pill">HTML/CSS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="achievements">
+  <div class="wrap section-pad">
+    <div style="text-align:center;margin-bottom:1rem">
+      <div class="sec-eyebrow aos" style="justify-content:center">Recognition</div>
+      <h2 class="sec-title aos aos-up" style="text-align:center">Achievements &amp; <span>Milestones</span></h2>
+    </div>
+    <div class="ach-grid">
+      <div class="ach-card aos aos-flip" data-delay="0"><div class="ach-icon" style="background:rgba(255,193,7,.12)">🏅</div><div class="ach-title">Academic Excellence — 81.2% Score</div><div class="ach-org">Class XII · Science Stream</div><div class="ach-date">2026</div><p class="ach-desc">Graduated from Ramlal Adarsha Vidyalaya with an impressive 81.2%, validating strong logic and analytical thinking.</p></div>
+      <div class="ach-card aos aos-flip" data-delay="80"><div class="ach-icon" style="background:rgba(35,206,107,.12)">💡</div><div class="ach-title">Self-Taught Developer</div><div class="ach-org">Frontend Engineering</div><div class="ach-date">Oct'22 – Present</div><p class="ach-desc">Independently mastered semantic HTML5, CSS3, and JavaScript (ES6), showcasing a proactive approach to learning.</p></div>
+      <div class="ach-card aos aos-flip" data-delay="160"><div class="ach-icon" style="background:rgba(124,58,237,.12)">🌐</div><div class="ach-title">Trilingual Proficiency</div><div class="ach-org">Communication</div><div class="ach-date">Ongoing</div><p class="ach-desc">Professionally fluent in Bengali, Hindi, and English, allowing for diverse team collaborations and excellent communication skills.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="experience">
+  <div class="wrap section-pad">
+    <div class="sec-eyebrow aos">Career</div>
+    <h2 class="sec-title aos aos-up" data-delay="80">My <span>Journey</span></h2>
+    <p class="sec-sub aos aos-up" data-delay="120">A snapshot of my developmental path and self-directed project building.</p>
+    <div class="exp-list">
+      <div class="exp-card aos aos-up" data-delay="0">
+        <div class="exp-left">
+          <div class="exp-logo">💻</div>
+          <div class="exp-co">Self-Taught Dev</div>
+          <div class="exp-dt">Oct'22 – Present</div>
+          <div class="exp-badge">Frontend</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Independent Web Developer</div>
+          <div class="exp-loc">📍 Bardhaman, West Bengal, India</div>
+          <p class="exp-desc">Cultivating deep expertise in frontend development by independently studying documentation, tackling complex UI problems, and building projects.</p>
+          <ul class="exp-bullets">
+            <li>Developing responsive layouts strictly from scratch to ensure peak performance</li>
+            <li>Building version-controlled projects using Git and publishing on GitHub Pages</li>
+            <li>Mastering vanilla JavaScript logic before relying on heavy libraries</li>
+            <li>Translating complex logic into functional web utilities (like the JS Calculator)</li>
+          </ul>
+          <div class="exp-tech-row">
+            <span class="exp-tech-tag">HTML5</span><span class="exp-tech-tag">CSS3</span><span class="exp-tech-tag">JavaScript</span><span class="exp-tech-tag">Tailwind CSS</span><span class="exp-tech-tag">Git/GitHub</span>
+          </div>
+        </div>
+      </div>
+      <div class="exp-card aos aos-up" data-delay="120">
+        <div class="exp-left">
+          <div class="exp-logo">🎓</div>
+          <div class="exp-co">STUDENT</div>
+          <div class="exp-dt">2024 – 2026</div>
+          <div class="exp-badge">Academic</div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-role">Higher Secondary — Science</div>
+          <div class="exp-loc">📍 Ramlal Adarsha Vidyalaya</div>
+          <p class="exp-desc">Honed strong mathematical foundations, physics concepts, and analytical thinking — crucial skills for advanced programming and algorithm design.</p>
+          <ul class="exp-bullets">
+            <li>Scored an overall strong academic percentage of 81.2%</li>
+            <li>Participated in logical problem-solving and foundational science applications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact">
+  <div class="wrap section-pad">
+    <div style="text-align:center;margin-bottom:4rem">
+      <div class="sec-eyebrow aos" style="justify-content:center">Get In Touch</div>
+      <h2 class="sec-title aos aos-up" style="text-align:center">Contact <span>Me</span></h2>
+      <p class="sec-sub aos aos-up" data-delay="80" style="margin:0 auto;text-align:center">Open for collaborations, internships &amp; exciting frontend opportunities. Let's build something great!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info-col">
+        <div class="contact-pill-card aos aos-left" data-delay="0">
+          <div class="cp-icon" style="background:rgba(227,31,113,.1);color:var(--pink)">✉️</div>
+          <div><div class="cp-lbl">Email Address</div><a href="karmakarsoumen07@gmail.com" class="cp-val">Click Here</a></div>
+        </div>
+        <div class="contact-pill-card aos aos-left" data-delay="80">
+          <div class="cp-icon" style="background:rgba(35,206,107,.1);color:var(--green)">📍</div>
+          <div><div class="cp-lbl">Location</div><div class="cp-val">Bardhaman, West Bengal, India</div></div>
+        </div>
+
+        <div class="aos aos-left" data-delay="240">
+          <h4 style="font-size:1.6rem;font-weight:800;margin-bottom:1.2rem;color:var(--black)">Connect with me</h4>
+          <div class="social-contact-row">
+            <a href="https://github.com/WithSoumen" target="_blank" class="sc-pill gh">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/soumen-karmakar-b65b77411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="sc-pill li">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.instagram.com/heyy_sizziiii?igsh=MWgwc3RjZmsxYWo3Yw==" target="_blank" class="sc-pill ig">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              Instagram
+            </a>
+            <a href="https://youtube.com/@heyyminee?si=0nmJliXnaJ--iixU" target="_blank" class="sc-pill yt">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+             YouTube
+           </a>
+
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-box aos aos-right" data-delay="0">
+        <h3>Send a Message 💌</h3>
+        <p>Have a project, collaboration, or just want to say hi? I'd love to hear from you.</p>
+        <div id="cForm">
+          <div class="form-2col">
+            <div class="fg"><label>First Name</label><input type="text" id="cf-fn" placeholder="Your first name" required/></div>
+            <div class="fg"><label>Last Name</label><input type="text" id="cf-ln" placeholder="Your last name"/></div>
+          </div>
+          <div class="fg"><label>Email Address</label><input type="email" id="cf-em" placeholder="your@email.com" required/></div>
+          <div class="fg"><label>Subject</label><input type="text" id="cf-sb" placeholder="What's this about?" required/></div>
+          <div class="fg"><label>Message</label><textarea id="cf-ms" placeholder="Tell me about your project or idea…" required></textarea></div>
+          <button class="form-submit" onclick="submitCF()">✉️ Send Message</button>
+        </div>
+        <div class="form-ok" id="cFormOk">
+          <div style="font-size:4.5rem">🎉</div>
+          <h4>Message Sent!</h4>
+          <p>Thanks for reaching out — I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="mono g">&lt;Soumen</span>&nbsp;<span class="mono p">Karmakar/&gt;</span></a>
+        <p>Proactive and self-taught Frontend Developer from Bardhaman, West Bengal.</p>
+        <div class="footer-socials">
+          <a href="https://github.com/WithSoumen" target="_blank"><svg viewBox="0 0 24 24" fill="#24292f"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+          <a href="https://www.linkedin.com/in/soumen-karmakar-b65b77411?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.instagram.com/heyy_sizziiii?igsh=MWgwc3RjZmsxYWo3Yw==" target="_blank"><svg viewBox="0 0 24 24"><defs><linearGradient id="ig2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs><path fill="url(#ig2)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+          <a href="karmakarsoumen07@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="#E31F71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+          <a href="https://youtube.com/@heyyminee?si=0nmJliXnaJ--iixU" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" fill="#ff0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#project">Projects</a></li></ul></div>
+      <div class="footer-col"><h4>More</h4><ul><li><a href="#achievements">Achievements</a></li><li><a href="#experience">Experience</a></li><li><a href="#contact">Contact</a></li><li><a href="#" target="_blank">Download CV</a></li></ul></div>
+      <div class="footer-col"><h4>Tech Stack</h4><ul><li><a>HTML5 &amp; CSS3</a></li><li><a>JavaScript (ES6)</a></li><li><a>Tailwind CSS</a></li><li><a>Python &amp; ML/AI</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>Built with <svg class="spin" width="18" viewBox="0 0 24 24" fill="#61DAFB" style="vertical-align:middle"><circle cx="12" cy="12" r="2.139"/><path d="M12 7.03c4.054 0 7.784.694 10.464 1.844C24.93 10.15 26 11.507 26 12c0 .494-1.07 1.85-3.536 3.126C19.784 16.276 16.054 16.97 12 16.97s-7.784-.694-10.464-1.844C-.93 13.85-2 12.494-2 12c0-.493 1.07-1.85 3.536-3.126C4.216 7.724 7.946 7.03 12 7.03z" stroke="#61DAFB" stroke-width="1" fill="none"/><path d="M8.33 9.515c2.027-3.512 4.52-6.203 6.672-7.684 1.127-.769 2.08-.97 2.676-.617.597.344.868 1.29.694 2.657-.21 1.64-.942 3.696-2.012 5.756a25.77 25.77 0 01-1.36 2.373A25.77 25.77 0 0112.67 14.4c-2.027 3.512-4.52 6.203-6.672 7.684-1.127.769-2.08.97-2.676.617-.597-.344-.868-1.29-.694-2.657.21-1.64.942-3.696 2.012-5.756A25.77 25.77 0 018.33 9.515z" stroke="#61DAFB" stroke-width="1" fill="none"/></svg> &amp; <span class="heart">❤️</span> by Soumen Karmakar &nbsp;·&nbsp; © 2026</p>
+      <button class="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Back to Top</button>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">✅ Message sent successfully!</div>
+<button class="scroll-fab" id="scrollFab" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
