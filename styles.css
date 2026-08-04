@@ -26,6 +26,7 @@ body{
 ::-webkit-scrollbar-track{background:#f0f4f8}
 ::-webkit-scrollbar-thumb{background:var(--green);border-radius:3px}
 
+
 /* ── PARTICLES ─────────────────────────── */
 #tsparticles{position:fixed;inset:0;z-index:0;pointer-events:none}
 
@@ -53,7 +54,7 @@ body{
   border-bottom:1px solid rgba(0,0,0,.07);
 }
 .logo{font-size:2.2rem;font-weight:900;letter-spacing:-.05rem}
-.logo .g{color:var(--green)} .logo .p{color:var(--pink)}
+.logo .g{color:var(--blue)} .logo .p{color:var(--pink)}
 .logo .mono{font-family:var(--mono);font-size:1.9rem}
 
 .nav-links{display:flex;align-items:center;gap:.4rem}
@@ -78,7 +79,7 @@ body{
 .ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 /* mobile nav overlay */
 .mob-overlay{
-  position:fixed;inset:0;background:var(--green);z-index:400;
+  position:fixed;inset:0;background:var(--black);z-index:400;
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3rem;
   opacity:0;visibility:hidden;transition:.3s;
 }
@@ -132,17 +133,27 @@ main{position:relative;z-index:1}
   font-size:clamp(5rem,9vw,8.5rem);font-weight:900;line-height:.95;
   letter-spacing:-.04rem;margin-bottom:1.4rem;
 }
-.hero-name .first{color:var(--black)}
-.hero-name .last{
-  background:linear-gradient(130deg,var(--green) 0%,var(--blue) 60%);
-  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+.hero-name .first {
+  background: linear-gradient(130deg, #ea580c 0%, #e11d48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
+
+.hero-name .last {
+  background: linear-gradient(130deg, #4f46e5 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
 .hero-role{
-  font-size:2rem;color:var(--green);font-family:var(--mono);font-weight:500;
+  font-size:2rem;color:var(--pink);font-family:var(--mono);font-weight:500;
   margin-bottom:1rem;display:flex;align-items:center;gap:.6rem;
 }
 .cursor-blink{
-  display:inline-block;width:2px;height:1.1em;background:var(--green);
+  display:inline-block;width:2px;height:1.1em;background:var(--black);
   vertical-align:middle;animation:blink .75s infinite;
 }
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
@@ -624,4 +635,118 @@ footer{
 @media(max-width:420px){
   .hero-name{font-size:3.8rem}
   .hc-stats{grid-template-columns:1fr 1fr}
+}
+
+/* ══════════════════════════════════════════════════════════
+   INTRO / PRELOADER ANIMATION  (typewriter → zoom transition)
+   Works in any aspect ratio, portrait or landscape.
+   ══════════════════════════════════════════════════════════ */
+html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
+
+#intro-overlay{
+  position:fixed;inset:0;width:100vw;height:100vh;
+  background:#050607;
+  z-index:99999;
+  display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+#intro-overlay .intro-noise{
+  position:absolute;inset:0;pointer-events:none;opacity:.035;mix-blend-mode:overlay;
+  background-image:radial-gradient(circle at 20% 30%,#fff 0,transparent 1px),radial-gradient(circle at 70% 60%,#fff 0,transparent 1px),radial-gradient(circle at 40% 80%,#fff 0,transparent 1px);
+  background-size:3px 3px,4px 4px,2px 2px;
+}
+#intro-overlay .intro-scanline{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(rgba(255,255,255,.02) 50%,transparent 50%);
+  background-size:100% 4px;opacity:.5;
+}
+.intro-textwrap{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  padding:0 4vw;max-width:100%;
+  transform:scale(1);opacity:1;filter:blur(0);
+  transition:transform 1.05s cubic-bezier(.62,0,.2,1),opacity .85s ease .05s,filter .9s ease;
+  will-change:transform,opacity,filter;
+}
+.intro-mono{
+  font-family:var(--mono);
+  font-weight:500;
+  letter-spacing:clamp(.05em,.6vw,.4em);
+  font-size:clamp(2.1rem,6.2vw,6.4rem);
+  line-height:1.15;
+  color:#eafcff;
+  white-space:pre;
+  text-shadow:
+    0 0 6px rgba(93,224,255,.85),
+    0 0 22px rgba(93,224,255,.55),
+    0 0 60px rgba(93,224,255,.35);
+  display:inline-block;
+}
+.intro-mono .ic-typed{color:#7be8ff}
+.intro-cursor{
+  display:inline-block;width:.55ch;margin-left:.15ch;
+  background:#7be8ff;
+  box-shadow:0 0 10px rgba(123,232,255,.9),0 0 26px rgba(123,232,255,.6);
+  animation:introBlink .95s steps(1) infinite;
+  transform:translateY(.08em);
+}
+@keyframes introBlink{0%,45%{opacity:1}46%,100%{opacity:0}}
+
+/* zoom-through / portal-out transition */
+#intro-overlay.intro-out{
+  transition:background-color .7s ease .35s;
+  background-color:#fff;
+}
+#intro-overlay.intro-out .intro-textwrap{
+  transform:scale(38);
+  opacity:0;
+  filter:blur(14px);
+}
+#intro-overlay.intro-hidden{display:none!important}
+
+/* orientation / very short viewports (landscape phones) */
+@media (max-height:480px){
+  .intro-mono{font-size:clamp(1.6rem,7vw,3.6rem)}
+}
+@media (orientation:landscape) and (max-height:420px){
+  .intro-mono{font-size:clamp(1.4rem,6vw,3rem);letter-spacing:.25em}
+}
+
+/* reveal main content smoothly right after intro (no flash/jump) */
+body.intro-active #tsparticles,
+body.intro-active main,
+body.intro-active .site-header,
+body.intro-active footer{
+  visibility:hidden;
+}
+body.intro-done #tsparticles,
+body.intro-done main,
+body.intro-done .site-header,
+body.intro-done footer{
+  visibility:visible;
+  animation:introReveal .6s ease both;
+}
+@keyframes introReveal{from{opacity:0}to{opacity:1}}
+
+@media (prefers-reduced-motion:reduce){
+  .intro-textwrap,#intro-overlay.intro-out .intro-textwrap{transition:opacity .4s ease!important;transform:none!important;filter:none!important}
+}
+
+/* ══════════════════════════════════════════════════════════
+   WEBGL FLUID SIMULATION CANVAS
+   Fixed full-viewport layer, pointer-events disabled so the
+   site underneath stays fully clickable/scrollable.
+   ══════════════════════════════════════════════════════════ */
+#fluid-canvas{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100vh;
+  z-index:9000;
+  pointer-events:none;
+  mix-blend-mode:multiply;
+  display:block;
+}
+@media (prefers-reduced-motion:reduce){
+  #fluid-canvas{display:none}
 }

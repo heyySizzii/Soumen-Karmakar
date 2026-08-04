@@ -39,7 +39,7 @@ const bObs=new IntersectionObserver(entries=>{
 document.querySelectorAll('.skill-block,.prof-wrap').forEach(el=>bObs.observe(el));
 
 /* TYPED ROLE */
-const roles = ['Student', 'Photographer', 'Frontend Developer', 'Video Editor'];
+const roles = ['Student', 'WBJEE - AIR:15283', 'Photographer', 'Frontend Developer', 'Video Editor'];
 let ri=0,ci=0,del=false;
 const tel=document.getElementById('typed-text');
 function typeIt(){
@@ -78,6 +78,7 @@ function submitCF(){
   t.style.display='block';
   setTimeout(()=>t.style.display='none',4000);
 }
+
 
 /* PARTICLES */
 (async()=>{
